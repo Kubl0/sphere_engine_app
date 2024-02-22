@@ -25,6 +25,7 @@ export default async function RootLayout({children}: Readonly<{ children: ReactN
     return (
         <html lang="en">
         <body className="h-[100vh] flex flex-col">
+        <Script src="/seco_sdk.js" strategy={"beforeInteractive"} />
         <SessionProvider session={session}>
             <Navbar />
             {children}

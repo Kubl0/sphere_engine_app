@@ -1,8 +1,8 @@
 'use client'
 
 import React, {ReactNode, useEffect, useState} from 'react';
-import Workspace from './workspace';
-import Script from "next/script";
+import Workspace from "./Workspace";
+
 
 const Page = () => {
 
@@ -26,7 +26,6 @@ const Page = () => {
 
     return (
         <div className="flex grow flex-col items-center">
-            <Script src="/se_sdk.js" strategy={"beforeInteractive"}/>
             <button
                 className="bg-violet-700 text-white px-3 h-8 mt-2 rounded-md text-md font-medium mb-2 hover:bg-violet-900 focus:outline-none focus:ring-2 focus:bg-violet-900 focus:ring-offset-2"
                 onClick={reloadWorkspace}>Reload Workspace
