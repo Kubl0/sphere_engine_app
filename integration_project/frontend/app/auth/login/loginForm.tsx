@@ -11,7 +11,6 @@ export default function LoginForm({ setMessage }: Readonly<LoginFormProps>) {
                 username: values.username,
                 password: values.password,
                 redirect: false,
-                callbackUrl: '/',
             });
 
             if (setMessage) {
