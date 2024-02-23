@@ -14,7 +14,7 @@ export const authOptions: NextAuthOptions = {
                 password: { label: "password", type: "password" }
             },
             async authorize(credentials, req) : Promise<any> {
-                const res = await fetch("http://localhost:8080/api/users/login", {
+                const res = await fetch("http://spring-boot:8080/api/users/login", {
                     method: 'POST',
                     body: JSON.stringify(credentials),
                     headers: { "Content-Type": "application/json" }

@@ -19,7 +19,7 @@ services:
     environment:
       - SPRING_DATA_MONGODB_HOST=mongo
       - SPRING_DATA_MONGODB_PORT=27017
-#
+
   nextjs:
     container_name: nextjs
     build: frontend/.
@@ -29,6 +29,8 @@ services:
       - spring-boot
     environment:
       - NEXT_PUBLIC_API_URL=http://localhost:8080
+
+
 
 
 
